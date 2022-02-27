@@ -1,9 +1,39 @@
+*{
+    font-family: matrix bold;
+}
 body{
     background: url(../img/background.jpeg) no-repeat top center;
 }
 
 #logo{
+
     width: 220px;
     display: block;
-    margin: 0 auto;
+    margin: 30px auto;
+}
+
+main{
+    width: 400px;
+    height: 40px;
+    display: flex;
+    background-color: white;
+    margin: 60px auto;
+    
+}
+
+#text-search{
+    font-size: 20px;
+    border-radius: 0px;
+    border-style: none;
+    width: 100%;
+    height: 34px;
+    margin: auto 0;
+}
+
+#search-icon{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding: 7px 15px;
+    cursor: pointer;
 }
