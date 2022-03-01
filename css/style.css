@@ -5,35 +5,118 @@ body{
     background: url(../img/background.jpeg) no-repeat top center;
 }
 
-#logo{
+h3{
+    color: white;
+}
 
+span{
+    color: red;
+}
+
+#logo{
     width: 220px;
     display: block;
     margin: 30px auto;
 }
 
 main{
-    width: 400px;
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+select{
     height: 40px;
-    display: flex;
-    background-color: white;
-    margin: 60px auto;
-    
+    width: 100px;
+    border-style: none;
+    font-size: 16px;
+    transform: translateY(-5%);
+}
+
+label{
+    position: relative;
+    top: -40px;
+    left: -90px;
+    color: white;
+}
+
+#search-function{
+    display: inline-block;
 }
 
 #text-search{
-    font-size: 20px;
+    font-size: 22px;
     border-radius: 0px;
     border-style: none;
     width: 100%;
-    height: 34px;
+    height: 40px;
     margin: auto 0;
 }
 
-#search-icon{
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    padding: 7px 15px;
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin: 50px 0;
+}
+
+#card-img{
+    display: block;
+    margin: 0 auto;
+    height: 400px;
+}
+
+#description h3{
+    width: 300px;
+}
+
+#dropdown-menu{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+#dropdown-menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+    max-height: 280px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#dropdown-menu ul li{
+    display: grid;
+    grid-template-columns: 70px auto;
+    border: 1px solid grey;
+    padding: 10px;
+    margin: 0 auto;
     cursor: pointer;
+}
+
+#dropdown-menu ul li img{
+    width: 50px;
+    justify-self: center;
+}
+
+#dropdown-menu ul li p{
+    margin-left: 10px;
+}
+
+#dropdown-menu ul li:hover{
+    background-color: grey;
+}
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+optgroup label{
+    color: black;
 }
