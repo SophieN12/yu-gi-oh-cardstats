@@ -14,9 +14,34 @@
     </header>
 
     <main>
-        <input id='text-search' type="text">
-        <img src="img/search-icon.png" id= "search-icon" alt="">
+        <div id="search-function">
+                <input id='text-search' type="search" placeholder="Card name">
+            
+            <div id="dropdown-menu" >
+                <ul class="hidden"></ul>
+            </div>
+        </div>
+
+        <select name="Attributes" id="attributes-filter-menu"></select>
+        
+        <select name="Races" id="races-filter-menu">
+            <optgroup label="Monster Cards:"></optgroup>
+            <optgroup label="Spell Cards:"></optgroup>
+            <optgroup label="Trap Cards:"></optgroup>
+        </select>
+        
+        <label for="filter-menu">Attributes: </label>
     </main>
+    
+    <div class="container">
+        
+        <div id= "stats"></div>
+
+        <img id="card-img" src="" alt="">
+
+        <div id=description></div>
+      
+    </div>
 
 
     <script src="js/main.js"></script>
