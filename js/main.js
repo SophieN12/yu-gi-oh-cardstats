@@ -182,7 +182,7 @@ function renderErrorMessage(status){
         throw new Error(errorMessage);
     } 
     else if (status == "catch-server"){
-        errorMessage += "Sorry. There's seems to be some problem with the server, please try again later!";
+        errorMessage += "Sorry. There's seems to be some problems. Please double check everything.";
     }
     else if (status == "catch-details"){
         errorMessage += "Something went wrong, could not fetch details about your card! Try again later."   
