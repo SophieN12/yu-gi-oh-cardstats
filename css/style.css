@@ -3,6 +3,7 @@
 }
 body{
     background: url(../img/background.jpeg) no-repeat top center;
+   
 }
 
 h3{
@@ -23,6 +24,7 @@ main{
     width: 100%;
     text-align: center;
     margin-top: 60px;
+    transform: translateX(5%)
 }
 
 
@@ -36,9 +38,18 @@ select{
 
 label{
     position: relative;
-    top: -40px;
-    left: -90px;
+    
     color: white;
+}
+
+#attributes-label{
+    top: -40px;
+    left: -200px;
+}
+
+#races-label{
+    top: -40px;
+    left: -170px;
 }
 
 #search-function{
@@ -51,7 +62,6 @@ label{
     border-style: none;
     width: 100%;
     height: 40px;
-    margin: auto 0;
 }
 
 .container{
@@ -117,6 +127,10 @@ label{
 .show{
     display: block;
 }
-optgroup label{
-    color: black;
+
+#error-messages{
+    display: block;
+    color: red;
+    font-size:18px;
+    text-align: center;
 }
